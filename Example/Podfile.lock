@@ -1,0 +1,14 @@
+PODS:
+  - IYAlertView (0.1.0)
+
+DEPENDENCIES:
+  - IYAlertView (from `../`)
+
+EXTERNAL SOURCES:
+  IYAlertView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  IYAlertView: 1bb63a52e93d61c4564da208c5c2d8f69c2eaf7c
+
+COCOAPODS: 0.35.0
