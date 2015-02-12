@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'IYAlertView', :exclusive => true do
+  pod "IYAlertView", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "IYAlertView", :path => "../"
+
+  
+end
