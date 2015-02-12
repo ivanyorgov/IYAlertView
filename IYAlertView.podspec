@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
                        IYAlertView is used to for both UIAlertView and UIAlertController.
                     If the iOS version is newer than 8.0 it automatically uses the UIAlertController for presenting alert.
                     It also uses only block for the actions of the buttons.
+                    DESC
   s.homepage         = "https://github.com/ivanyorgov/IYAlertView"
   s.license          = 'MIT'
   s.author           = { "ivan yorgov" => "stubborn@mail.bg" }
