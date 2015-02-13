@@ -3,7 +3,7 @@
 //  Comeleo
 //
 //  Created by Ivan Yorgov on 08.07.14.
-//  Copyright (c) 2014 г. Osceola SWD. All rights reserved.
+//  Copyright (c) 2014 г. Ivan Yorgov. All rights reserved.
 //
 
 #import <objc/runtime.h>
