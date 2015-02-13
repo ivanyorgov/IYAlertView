@@ -22,8 +22,8 @@ it, simply add the following line to your Podfile:
 
 Create action for a button in the alert
 ```Objective-C
-    IYAlertViewAction *alertActionDefault = [IYAlertViewAction alertActionWithType:kAlertTypeDefault
-                                                                             title:@"Button title"
+IYAlertViewAction *alertActionDefault = [IYAlertViewAction alertActionWithType:kAlertTypeDefault
+                                                                            title:@"Button title"
                                                                         andHandler:^(id alert) {
                                                                             //Do something after a button was pressed
                                                                         }];
@@ -36,6 +36,8 @@ Present alert with a default action - button with title "OK".
                             andActions:nil
                          inViewContext:self.view];
 ```
+
+Create alert with two or more buttons
 ```Objective-C
 IYAlertViewAction *alertActionDefault = [IYAlertViewAction alertActionWithType:kAlertTypeDefault
                                                                             title:@"Button title"
