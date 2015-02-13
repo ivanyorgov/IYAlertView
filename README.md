@@ -17,6 +17,43 @@ IYAlertView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
     pod "IYAlertView"
+    
+## Sample usage
+
+Create action for a button in the alert
+```Objective-C
+    IYAlertViewAction *alertActionDefault = [IYAlertViewAction alertActionWithType:kAlertTypeDefault
+                                                                             title:@"Button title"
+                                                                        andHandler:^(id alert) {
+                                                                            //Do something after a button was pressed
+                                                                        }];
+```
+
+Present alert with a default action - button with title "OK".
+```Objective-C
+[IYAlertView presentAlertWithTitle:@"Title"
+                               message:@"Message"
+                            andActions:nil
+                         inViewContext:self.view];
+```
+```Objective-C
+IYAlertViewAction *alertActionDefault = [IYAlertViewAction alertActionWithType:kAlertTypeDefault
+                                                                            title:@"Button title"
+                                                                        andHandler:^(id alert) {
+                                                                            //Do something after a button was pressed
+                                                                        }];
+IYAlertViewAction *alertActionDestructive = [IYAlertViewAction alertActionWithType:kAlertTypeDestructive
+                                                                            title:@"Cancel"
+                                                                        andHandler:^(id alert) {
+                                                                            //Do something after a button was pressed
+                                                                        }];
+
+[IYAlertView presentAlertWithTitle:@"Title"
+                               message:@"Message"
+                            andActions:@[alertActionDefault, alertActionDestructive]
+                         inViewContext:self.view];
+```
+
 
 ## Author
 
