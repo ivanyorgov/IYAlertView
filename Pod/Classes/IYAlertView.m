@@ -136,4 +136,17 @@
     }
 }
 
+- (UITextField *)textFieldAtIndex:(NSInteger)index forAlert:(id)alert
+{
+    UITextField *textField = nil;
+    
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
+        textField = [((UIAlertView *)alert) textFieldAtIndex:0];
+    } else {
+        textField = [[((UIAlertController*)alert) textFields] objectAtIndex:0];
+    }
+    
+    return textField;
+}
+
 @end

@@ -14,6 +14,7 @@
 
 + (void)presentAlertWithTitle:(NSString *)title message:(NSString *)message andActions:(NSArray *)actions inViewContext:(id)context;
 + (void)presentAlertWithTitle:(NSString *)title message:(NSString *)message actions:(NSArray *)actions andTextField:(UITextField *)textFieldToAdd inViewContext:(id)context;
++ (UITextField *)textFieldAtIndex:(NSInteger)index forAlert:(id)alert;
 
 - (id)initAlertWithTitle:(NSString *)title message:(NSString *)message actions:(NSArray *)actions textField:(UITextField *)textFieldToAdd andViewContext:(id)context;
 - (void)showAlert;
