@@ -136,7 +136,7 @@
     }
 }
 
-- (UITextField *)textFieldAtIndex:(NSInteger)index forAlert:(id)alert
++ (UITextField *)textFieldAtIndex:(NSInteger)index forAlert:(id)alert
 {
     UITextField *textField = nil;
     
