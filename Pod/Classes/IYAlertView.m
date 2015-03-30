@@ -141,9 +141,9 @@
     UITextField *textField = nil;
     
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
-        textField = [((UIAlertView *)alert) textFieldAtIndex:0];
+        textField = [[((UIAlertController*)alert) textFields] objectAtIndex:index];
     } else {
-        textField = [[((UIAlertController*)alert) textFields] objectAtIndex:0];
+        textField = [((UIAlertView *)alert) textFieldAtIndex:index];
     }
     
     return textField;
