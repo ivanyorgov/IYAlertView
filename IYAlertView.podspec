@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "IYAlertView"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "IYAlertView manages UIAlertView and UIAlertController with blocks"
   s.description      = <<-DESC
                        IYAlertView is used to for both UIAlertView and UIAlertController.
